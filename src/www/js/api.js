@@ -137,6 +137,7 @@ class API {
       body: { address },
     });
   }
+
   async updateClientAllowedIPs({ clientId, allowedIPs }) {
     return this.call({
       method: 'put',
@@ -144,6 +145,5 @@ class API {
       body: { allowedIPs },
     });
   }
-
 
 }
